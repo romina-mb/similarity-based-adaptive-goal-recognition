@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Gradual - Experimental Results</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Gradual";
+    var mkdocs_page_input_path = "gradual.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Experimental Results</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sudden/">Sudden Drift</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../reoccurring/">Reoccurring Drift</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Gradual</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#problem-0-blocks-world">Problem 0 (blocks-world)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-1-blocks-world">Problem 1 (blocks-world)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-2-blocks-world">Problem 2 (blocks-world)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-3-blocks-world">Problem 3 (blocks-world)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-4-blocks-world">Problem 4 (blocks-world)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-5-blocks-world">Problem 5 (blocks-world)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-6-depots">Problem 6 (depots)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-7-depots">Problem 7 (depots)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-8-driverlog">Problem 8 (driverlog)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-9-driverlog">Problem 9 (driverlog)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-10-driverlog">Problem 10 (driverlog)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-11-driverlog">Problem 11 (driverlog)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-12-driverlog">Problem 12 (driverlog)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-13-dwr">Problem 13 (dwr)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-14-dwr">Problem 14 (dwr)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-15-dwr">Problem 15 (dwr)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-16-dwr">Problem 16 (dwr)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-17-dwr">Problem 17 (dwr)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-18-easy-ipc-grid">Problem 18 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-19-easy-ipc-grid">Problem 19 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-20-easy-ipc-grid">Problem 20 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-21-easy-ipc-grid">Problem 21 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-22-easy-ipc-grid">Problem 22 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-23-easy-ipc-grid">Problem 23 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-24-easy-ipc-grid">Problem 24 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-25-easy-ipc-grid">Problem 25 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-26-easy-ipc-grid">Problem 26 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-27-easy-ipc-grid">Problem 27 (easy-ipc-grid)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-28-ferry">Problem 28 (ferry)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-29-ferry">Problem 29 (ferry)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-30-ferry">Problem 30 (ferry)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-31-ferry">Problem 31 (ferry)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-32-ferry">Problem 32 (ferry)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-33-ferry">Problem 33 (ferry)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-34-intrusion-detection">Problem 34 (intrusion-detection)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-35-intrusion-detection">Problem 35 (intrusion-detection)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-36-intrusion-detection">Problem 36 (intrusion-detection)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-37-logistics">Problem 37 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-38-logistics">Problem 38 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-39-logistics">Problem 39 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-40-logistics">Problem 40 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-41-logistics">Problem 41 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-42-logistics">Problem 42 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-43-logistics">Problem 43 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-44-logistics">Problem 44 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-45-logistics">Problem 45 (logistics)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-46-miconic">Problem 46 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-47-miconic">Problem 47 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-48-miconic">Problem 48 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-49-miconic">Problem 49 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-50-miconic">Problem 50 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-51-miconic">Problem 51 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-52-miconic">Problem 52 (miconic)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-53-rovers">Problem 53 (rovers)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-54-rovers">Problem 54 (rovers)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-55-rovers">Problem 55 (rovers)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-56-rovers">Problem 56 (rovers)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-57-rovers">Problem 57 (rovers)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-58-rovers">Problem 58 (rovers)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-59-satellite">Problem 59 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-60-satellite">Problem 60 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-61-satellite">Problem 61 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-62-satellite">Problem 62 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-63-satellite">Problem 63 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-64-satellite">Problem 64 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-65-satellite">Problem 65 (satellite)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-66-sokoban">Problem 66 (sokoban)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-67-sokoban">Problem 67 (sokoban)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-68-sokoban">Problem 68 (sokoban)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-69-sokoban">Problem 69 (sokoban)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-70-sokoban">Problem 70 (sokoban)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-71-sokoban">Problem 71 (sokoban)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-72-zeno-travel">Problem 72 (zeno-travel)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-73-zeno-travel">Problem 73 (zeno-travel)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-74-zeno-travel">Problem 74 (zeno-travel)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#problem-75-zeno-travel">Problem 75 (zeno-travel)</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Experimental Results</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Gradual</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="gradual-drift">Gradual Drift</h1>
+<h4 id="problem-0-blocks-world">Problem 0 (blocks-world)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/blocks-world_block-words_p01_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/blocks-world_block-words_p01_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/blocks-world_block-words_p01_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/blocks-world_block-words_p01_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-1-blocks-world">Problem 1 (blocks-world)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/blocks-world_block-words_p02_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/blocks-world_block-words_p02_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/blocks-world_block-words_p02_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/blocks-world_block-words_p02_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-2-blocks-world">Problem 2 (blocks-world)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/blocks-world_block-words_p03_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/blocks-world_block-words_p03_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/blocks-world_block-words_p03_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/blocks-world_block-words_p03_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-3-blocks-world">Problem 3 (blocks-world)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/blocks-world_block-words_p04_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/blocks-world_block-words_p04_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/blocks-world_block-words_p04_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/blocks-world_block-words_p04_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-4-blocks-world">Problem 4 (blocks-world)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/blocks-world_block-words_p05_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/blocks-world_block-words_p05_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/blocks-world_block-words_p05_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/blocks-world_block-words_p05_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-5-blocks-world">Problem 5 (blocks-world)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/blocks-world_block-words_p06_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/blocks-world_block-words_p06_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/blocks-world_block-words_p06_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/blocks-world_block-words_p06_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-6-depots">Problem 6 (depots)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/depots_problem01_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/depots_problem01_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/depots_problem01_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/depots_problem01_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-7-depots">Problem 7 (depots)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/depots_problem03_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/depots_problem03_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/depots_problem03_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/depots_problem03_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-8-driverlog">Problem 8 (driverlog)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/driverlog_driverlog_p01_hyp-1_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/driverlog_driverlog_p01_hyp-1_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/driverlog_driverlog_p01_hyp-1_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/driverlog_driverlog_p01_hyp-1_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-9-driverlog">Problem 9 (driverlog)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/driverlog_driverlog_p02_hyp-2_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/driverlog_driverlog_p02_hyp-2_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/driverlog_driverlog_p02_hyp-2_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/driverlog_driverlog_p02_hyp-2_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-10-driverlog">Problem 10 (driverlog)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/driverlog_driverlog_p03_hyp-1_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/driverlog_driverlog_p03_hyp-1_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/driverlog_driverlog_p03_hyp-1_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/driverlog_driverlog_p03_hyp-1_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-11-driverlog">Problem 11 (driverlog)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/driverlog_driverlog_p04_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/driverlog_driverlog_p04_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/driverlog_driverlog_p04_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/driverlog_driverlog_p04_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-12-driverlog">Problem 12 (driverlog)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/driverlog_driverlog_p05_hyp-4_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/driverlog_driverlog_p05_hyp-4_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/driverlog_driverlog_p05_hyp-4_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/driverlog_driverlog_p05_hyp-4_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-13-dwr">Problem 13 (dwr)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/dwr_dwr_p01_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/dwr_dwr_p01_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/dwr_dwr_p01_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/dwr_dwr_p01_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-14-dwr">Problem 14 (dwr)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/dwr_dwr_p02_hyp-2_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/dwr_dwr_p02_hyp-2_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/dwr_dwr_p02_hyp-2_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/dwr_dwr_p02_hyp-2_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-15-dwr">Problem 15 (dwr)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/dwr_dwr_p03_hyp-2_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/dwr_dwr_p03_hyp-2_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/dwr_dwr_p03_hyp-2_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/dwr_dwr_p03_hyp-2_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-16-dwr">Problem 16 (dwr)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/dwr_dwr_p05_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/dwr_dwr_p05_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/dwr_dwr_p05_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/dwr_dwr_p05_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-17-dwr">Problem 17 (dwr)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/dwr_dwr_p07_hyp-3_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/dwr_dwr_p07_hyp-3_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/dwr_dwr_p07_hyp-3_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/dwr_dwr_p07_hyp-3_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-18-easy-ipc-grid">Problem 18 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid-aaai_p10-5-5_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid-aaai_p10-5-5_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid-aaai_p10-5-5_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid-aaai_p10-5-5_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-19-easy-ipc-grid">Problem 19 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid-aaai_p5-10-10_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid-aaai_p5-10-10_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid-aaai_p5-10-10_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid-aaai_p5-10-10_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-20-easy-ipc-grid">Problem 20 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid-aaai_p5-5-5_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid-aaai_p5-5-5_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid-aaai_p5-5-5_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid-aaai_p5-5-5_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-21-easy-ipc-grid">Problem 21 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p04_hyp-1_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p04_hyp-1_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p04_hyp-1_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p04_hyp-1_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-22-easy-ipc-grid">Problem 22 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p05_hyp-1_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p05_hyp-1_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p05_hyp-1_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p05_hyp-1_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-23-easy-ipc-grid">Problem 23 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p06_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p06_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p06_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p06_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-24-easy-ipc-grid">Problem 24 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p07_hyp-3_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p07_hyp-3_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p07_hyp-3_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p07_hyp-3_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-25-easy-ipc-grid">Problem 25 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p10-5-5_hyp-1_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p10-5-5_hyp-1_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p10-5-5_hyp-1_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p10-5-5_hyp-1_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-26-easy-ipc-grid">Problem 26 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p5-10-10_hyp-6_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p5-10-10_hyp-6_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p5-10-10_hyp-6_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p5-10-10_hyp-6_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-27-easy-ipc-grid">Problem 27 (easy-ipc-grid)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/easy-ipc-grid_easy-ipc-grid_p5-5-5_hyp-1_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/easy-ipc-grid_easy-ipc-grid_p5-5-5_hyp-1_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/easy-ipc-grid_easy-ipc-grid_p5-5-5_hyp-1_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/easy-ipc-grid_easy-ipc-grid_p5-5-5_hyp-1_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-28-ferry">Problem 28 (ferry)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/ferry_ferry_p01_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/ferry_ferry_p01_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/ferry_ferry_p01_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/ferry_ferry_p01_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-29-ferry">Problem 29 (ferry)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/ferry_ferry_p02_hyp-3_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/ferry_ferry_p02_hyp-3_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/ferry_ferry_p02_hyp-3_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/ferry_ferry_p02_hyp-3_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-30-ferry">Problem 30 (ferry)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/ferry_ferry_p03_hyp-4_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/ferry_ferry_p03_hyp-4_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/ferry_ferry_p03_hyp-4_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/ferry_ferry_p03_hyp-4_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-31-ferry">Problem 31 (ferry)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/ferry_ferry_p04_hyp-2_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/ferry_ferry_p04_hyp-2_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/ferry_ferry_p04_hyp-2_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/ferry_ferry_p04_hyp-2_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-32-ferry">Problem 32 (ferry)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/ferry_ferry_p05_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/ferry_ferry_p05_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/ferry_ferry_p05_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/ferry_ferry_p05_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-33-ferry">Problem 33 (ferry)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/ferry_ferry_p06_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/ferry_ferry_p06_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/ferry_ferry_p06_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/ferry_ferry_p06_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-34-intrusion-detection">Problem 34 (intrusion-detection)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/intrusion-detection_intrusion-detection-aaai_p20_hyp-3_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/intrusion-detection_intrusion-detection-aaai_p20_hyp-3_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/intrusion-detection_intrusion-detection-aaai_p20_hyp-3_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/intrusion-detection_intrusion-detection-aaai_p20_hyp-3_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-35-intrusion-detection">Problem 35 (intrusion-detection)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/intrusion-detection_intrusion-detection_p10_hyp-4_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/intrusion-detection_intrusion-detection_p10_hyp-4_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/intrusion-detection_intrusion-detection_p10_hyp-4_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/intrusion-detection_intrusion-detection_p10_hyp-4_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-36-intrusion-detection">Problem 36 (intrusion-detection)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/intrusion-detection_intrusion-detection_p20_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/intrusion-detection_intrusion-detection_p20_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/intrusion-detection_intrusion-detection_p20_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/intrusion-detection_intrusion-detection_p20_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-37-logistics">Problem 37 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics-aaai_p01_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics-aaai_p01_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics-aaai_p01_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics-aaai_p01_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-38-logistics">Problem 38 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics-aaai_p02_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics-aaai_p02_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics-aaai_p02_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics-aaai_p02_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-39-logistics">Problem 39 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics-aaai_p03_hyp-2_10_0_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics-aaai_p03_hyp-2_10_0_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics-aaai_p03_hyp-2_10_0_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics-aaai_p03_hyp-2_10_0_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-40-logistics">Problem 40 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics_p01_hyp-2_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics_p01_hyp-2_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics_p01_hyp-2_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics_p01_hyp-2_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-41-logistics">Problem 41 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics_p02_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics_p02_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics_p02_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics_p02_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-42-logistics">Problem 42 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics_p03_hyp-7_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics_p03_hyp-7_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics_p03_hyp-7_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics_p03_hyp-7_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-43-logistics">Problem 43 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics_p05_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics_p05_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics_p05_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics_p05_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-44-logistics">Problem 44 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics_p06_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics_p06_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics_p06_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics_p06_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-45-logistics">Problem 45 (logistics)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/logistics_logistics_p07_hyp-3_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/logistics_logistics_p07_hyp-3_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/logistics_logistics_p07_hyp-3_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/logistics_logistics_p07_hyp-3_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-46-miconic">Problem 46 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p01_hyp-1_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p01_hyp-1_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p01_hyp-1_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p01_hyp-1_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-47-miconic">Problem 47 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p02_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p02_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p02_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p02_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-48-miconic">Problem 48 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p03_hyp-3_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p03_hyp-3_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p03_hyp-3_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p03_hyp-3_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-49-miconic">Problem 49 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p04_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p04_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p04_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p04_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-50-miconic">Problem 50 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p05_hyp-4_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p05_hyp-4_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p05_hyp-4_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p05_hyp-4_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-51-miconic">Problem 51 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p06_hyp-2_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p06_hyp-2_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p06_hyp-2_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p06_hyp-2_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-52-miconic">Problem 52 (miconic)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/miconic_miconic_p07_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/miconic_miconic_p07_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/miconic_miconic_p07_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/miconic_miconic_p07_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-53-rovers">Problem 53 (rovers)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/rovers_rovers_p01_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/rovers_rovers_p01_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/rovers_rovers_p01_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/rovers_rovers_p01_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-54-rovers">Problem 54 (rovers)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/rovers_rovers_p02_hyp-2_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/rovers_rovers_p02_hyp-2_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/rovers_rovers_p02_hyp-2_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/rovers_rovers_p02_hyp-2_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-55-rovers">Problem 55 (rovers)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/rovers_rovers_p03_hyp-2_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/rovers_rovers_p03_hyp-2_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/rovers_rovers_p03_hyp-2_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/rovers_rovers_p03_hyp-2_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-56-rovers">Problem 56 (rovers)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/rovers_rovers_p04_hyp-2_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/rovers_rovers_p04_hyp-2_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/rovers_rovers_p04_hyp-2_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/rovers_rovers_p04_hyp-2_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-57-rovers">Problem 57 (rovers)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/rovers_rovers_p06_hyp-4_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/rovers_rovers_p06_hyp-4_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/rovers_rovers_p06_hyp-4_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/rovers_rovers_p06_hyp-4_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-58-rovers">Problem 58 (rovers)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/rovers_rovers_p07_hyp-3_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/rovers_rovers_p07_hyp-3_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/rovers_rovers_p07_hyp-3_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/rovers_rovers_p07_hyp-3_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-59-satellite">Problem 59 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p01_hyp-2_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p01_hyp-2_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p01_hyp-2_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p01_hyp-2_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-60-satellite">Problem 60 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p02_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p02_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p02_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p02_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-61-satellite">Problem 61 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p03_hyp-3_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p03_hyp-3_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p03_hyp-3_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p03_hyp-3_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-62-satellite">Problem 62 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p04_hyp-2_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p04_hyp-2_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p04_hyp-2_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p04_hyp-2_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-63-satellite">Problem 63 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p05_hyp-2_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p05_hyp-2_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p05_hyp-2_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p05_hyp-2_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-64-satellite">Problem 64 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p06_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p06_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p06_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p06_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-65-satellite">Problem 65 (satellite)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/satellite_satellite_p07_hyp-4_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/satellite_satellite_p07_hyp-4_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/satellite_satellite_p07_hyp-4_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/satellite_satellite_p07_hyp-4_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-66-sokoban">Problem 66 (sokoban)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/sokoban_sokoban_p01_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/sokoban_sokoban_p01_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/sokoban_sokoban_p01_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/sokoban_sokoban_p01_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-67-sokoban">Problem 67 (sokoban)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/sokoban_sokoban_p03_hyp-4_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/sokoban_sokoban_p03_hyp-4_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/sokoban_sokoban_p03_hyp-4_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/sokoban_sokoban_p03_hyp-4_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-68-sokoban">Problem 68 (sokoban)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/sokoban_sokoban_p04_hyp-3_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/sokoban_sokoban_p04_hyp-3_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/sokoban_sokoban_p04_hyp-3_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/sokoban_sokoban_p04_hyp-3_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-69-sokoban">Problem 69 (sokoban)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/sokoban_sokoban_p05_hyp-4_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/sokoban_sokoban_p05_hyp-4_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/sokoban_sokoban_p05_hyp-4_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/sokoban_sokoban_p05_hyp-4_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-70-sokoban">Problem 70 (sokoban)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/sokoban_sokoban_p06_hyp-2_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/sokoban_sokoban_p06_hyp-2_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/sokoban_sokoban_p06_hyp-2_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/sokoban_sokoban_p06_hyp-2_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-71-sokoban">Problem 71 (sokoban)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/sokoban_sokoban_p07_hyp-4_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/sokoban_sokoban_p07_hyp-4_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/sokoban_sokoban_p07_hyp-4_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/sokoban_sokoban_p07_hyp-4_10_1_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-72-zeno-travel">Problem 72 (zeno-travel)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/zeno-travel_zeno-travel_p01_hyp-1_10_3_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/zeno-travel_zeno-travel_p01_hyp-1_10_3_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/zeno-travel_zeno-travel_p01_hyp-1_10_3_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/zeno-travel_zeno-travel_p01_hyp-1_10_3_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-73-zeno-travel">Problem 73 (zeno-travel)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/zeno-travel_zeno-travel_p02_hyp-3_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/zeno-travel_zeno-travel_p02_hyp-3_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/zeno-travel_zeno-travel_p02_hyp-3_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/zeno-travel_zeno-travel_p02_hyp-3_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-74-zeno-travel">Problem 74 (zeno-travel)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/zeno-travel_zeno-travel_p03_hyp-3_10_2_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/zeno-travel_zeno-travel_p03_hyp-3_10_2_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/zeno-travel_zeno-travel_p03_hyp-3_10_2_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/zeno-travel_zeno-travel_p03_hyp-3_10_2_-closedloop-trend_per50.svg" /></p>
+<h4 id="problem-75-zeno-travel">Problem 75 (zeno-travel)</h4>
+<p><img alt="image" src="../images/gradual/no_relearn/zeno-travel_zeno-travel_p06_hyp-2_10_1_-no-relearn_per50.svg" />
+<img alt="image" src="../images/gradual/open_loop/zeno-travel_zeno-travel_p06_hyp-2_10_1_-openloop_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_ave/zeno-travel_zeno-travel_p06_hyp-2_10_1_-closedloop_ave_metric_per50.svg" />
+<img alt="image" src="../images/gradual/closed_loop_trend/zeno-travel_zeno-travel_p06_hyp-2_10_1_-closedloop-trend_per50.svg" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../reoccurring/" class="btn btn-neutral" title="Reoccurring Drift"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../reoccurring/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

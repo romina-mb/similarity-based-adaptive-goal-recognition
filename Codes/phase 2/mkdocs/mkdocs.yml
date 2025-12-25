@@ -1,0 +1,9 @@
+site_name: Experimental Results
+nav:
+  - Home: index.md
+  - Sudden Drift: sudden.md
+  - Reoccurring Drift: reoccurring.md
+  - Gradual: gradual.md
+
+
+theme: readthedocs

@@ -1,0 +1,382 @@
+{
+    "blocks-world/bw_p01": [
+        "goal_18",
+        "goal_19",
+        "goal_20"
+    ],
+    "blocks-world/bw_p02": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "blocks-world/bw_p03": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "blocks-world/bw_p04": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "blocks-world/bw_p05": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "blocks-world/bw_p06": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "depots/depots_p01": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "depots/depots_p03": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "driverlog/driverlog_p01": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "driverlog/driverlog_p02": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "driverlog/driverlog_p03": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "driverlog/driverlog_p04": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "driverlog/driverlog_p05": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "dwr/dwr_p01": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "dwr/dwr_p02": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "dwr/dwr_p03": [
+        "goal_4",
+        "goal_5",
+        "goal_6"
+    ],
+    "dwr/dwr_p05": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "dwr/dwr_p07": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "easy-ipc-grid/easy-ipc-grid-aaai_p10-5-5": [
+        "goal_2",
+        "goal_3",
+        "goal_4"
+    ],
+    "easy-ipc-grid/easy-ipc-grid-aaai_p5-10-10": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "easy-ipc-grid/easy-ipc-grid-aaai_p5-5-5": [
+        "goal_2",
+        "goal_3",
+        "goal_4"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p04": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p05": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p06": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p07": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p10-5-5": [
+        "goal_2",
+        "goal_3",
+        "goal_4"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p5-10-10": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "easy-ipc-grid/easy-ipc-grid_p5-5-5": [
+        "goal_2",
+        "goal_3",
+        "goal_4"
+    ],
+    "ferry/ferry_p01": [
+        "goal_4",
+        "goal_5",
+        "goal_6"
+    ],
+    "ferry/ferry_p02": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "ferry/ferry_p03": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "ferry/ferry_p04": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "ferry/ferry_p05": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "ferry/ferry_p06": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "intrusion-detection/intrusion-detection-aaai_p20": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "intrusion-detection/intrusion-detection_p10": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "intrusion-detection/intrusion-detection_p20": [
+        "goal_17",
+        "goal_18",
+        "goal_19"
+    ],
+    "logistics/logistics-aaai_p01": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics-aaai_p02": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics-aaai_p03": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics_p01": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics_p02": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics_p03": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics_p05": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "logistics/logistics_p06": [
+        "goal_9",
+        "goal_10",
+        "goal_11"
+    ],
+    "logistics/logistics_p07": [
+        "goal_9",
+        "goal_10",
+        "goal_11"
+    ],
+    "miconic/miconic_p01": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "miconic/miconic_p02": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "miconic/miconic_p03": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "miconic/miconic_p04": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "miconic/miconic_p05": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "miconic/miconic_p06": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "miconic/miconic_p07": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "rovers/rovers_p01": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "rovers/rovers_p02": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "rovers/rovers_p03": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "rovers/rovers_p04": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "rovers/rovers_p06": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "rovers/rovers_p07": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "satellite/satellite_p01": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "satellite/satellite_p02": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "satellite/satellite_p03": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "satellite/satellite_p04": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "satellite/satellite_p05": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "satellite/satellite_p06": [
+        "goal_4",
+        "goal_5",
+        "goal_6"
+    ],
+    "satellite/satellite_p07": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "sokoban/sokoban_p01": [
+        "goal_7",
+        "goal_8",
+        "goal_9"
+    ],
+    "sokoban/sokoban_p03": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "sokoban/sokoban_p04": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "sokoban/sokoban_p05": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "sokoban/sokoban_p06": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "sokoban/sokoban_p07": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "zeno-travel/zeno-travel_p01": [
+        "goal_5",
+        "goal_6",
+        "goal_7"
+    ],
+    "zeno-travel/zeno-travel_p02": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "zeno-travel/zeno-travel_p03": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ],
+    "zeno-travel/zeno-travel_p06": [
+        "goal_3",
+        "goal_4",
+        "goal_5"
+    ]
+}

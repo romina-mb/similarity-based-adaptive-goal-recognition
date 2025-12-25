@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7" xmlns="http://www.xes-standard.org/">
+<trace>
+<event>
+<string key="concept:name" value="(drive truck1 distributor1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck2 distributor0 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck2 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck2 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot0 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck0 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck0 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck2 distributor0 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck2 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck2 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(drive truck1 distributor1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck2 distributor0 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck2 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck2 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(drive truck1 distributor1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(drive truck1 distributor1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+</trace>
+<trace>
+<event>
+<string key="concept:name" value="(lift hoist5 crate1 pallet5 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist5 crate1 truck1 distributor2)"/>
+</event>
+<event>
+<string key="concept:name" value="(lift hoist2 crate2 crate0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck1 distributor2 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist1 crate1 truck1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(load hoist2 crate2 truck0 depot2)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist1 crate1 pallet1 depot1)"/>
+</event>
+<event>
+<string key="concept:name" value="(drive truck0 depot2 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(unload hoist0 crate2 truck0 depot0)"/>
+</event>
+<event>
+<string key="concept:name" value="(drop hoist0 crate2 pallet0 depot0)"/>
+</event>
+</trace>
+</log>

@@ -1,0 +1,19 @@
+﻿N,Drift type,Based,metric,Shapiro-Wilk p,distribution state,test name,t_statistics,test p_value,test result
+76,Gradual,Problem,BACC,0.7945703880415644,normal,Paired t-test,5.1734473191837695,1.8548278235935313e-06,Significant difference ✅
+76,Gradual,Problem,Recall,0.008062072321503919,not normal,Wilcoxon signed-rank test,0.0,1.1284274661260857e-13,Significant difference ✅
+76,Gradual,Problem,Precision,0.00044588235428894474,not normal,Wilcoxon signed-rank test,209.0,2.168873246003045e-10,Significant difference ✅
+76,Re-occurring,Problem,BACC,0.30001987815967857,normal,Paired t-test,5.2462616268540065,1.3907567534014352e-06,Significant difference ✅
+76,Re-occurring,Problem,Recall,0.01436419170590099,not normal,Wilcoxon signed-rank test,0.0,1.1292648598249573e-13,Significant difference ✅
+76,Re-occurring,Problem,Precision,4.273205162217891e-05,not normal,Wilcoxon signed-rank test,174.0,2.4959050936196857e-11,Significant difference ✅
+76,Sudden,Problem,BACC,0.47809552798848143,normal,Paired t-test,5.404091347961801,7.410006456528094e-07,Significant difference ✅
+76,Sudden,Problem,Recall,0.01466400267605378,not normal,Wilcoxon signed-rank test,0.0,7.711235103541698e-14,Significant difference ✅
+76,Sudden,Problem,Precision,3.3663065028574355e-05,not normal,Wilcoxon signed-rank test,158.0,1.4141843682611328e-11,Significant difference ✅
+13,Gradual,Domain,BACC,0.1350112571389087,normal,Paired t-test,3.9328826665383243,0.0019882951160091872,Significant difference ✅
+13,Gradual,Domain,Recall,0.061200292355221425,normal,Paired t-test,7.39431904368621,8.338283444425044e-06,Significant difference ✅
+13,Gradual,Domain,Precision,0.7476964111944,normal,Paired t-test,-4.928601870463812,0.000348713768350076,Significant difference ✅
+13,Re-occurring,Domain,BACC,0.1350112571389087,normal,Paired t-test,3.9328826665383243,0.0019882951160091872,Significant difference ✅
+13,Re-occurring,Domain,Recall,0.061200292355221425,normal,Paired t-test,7.39431904368621,8.338283444425044e-06,Significant difference ✅
+13,Re-occurring,Domain,Precision,0.7476964111944,normal,Paired t-test,-4.928601870463812,0.000348713768350076,Significant difference ✅
+13,Gradual,Problem,BACC,0.1350112571389087,normal,Paired t-test,3.9328826665383243,0.0019882951160091872,Significant difference ✅
+13,Gradual,Problem,Recall,0.061200292355221425,normal,Paired t-test,7.39431904368621,8.338283444425044e-06,Significant difference ✅
+13,Gradual,Problem,Precision,0.7476964111944,normal,Paired t-test,-4.928601870463812,0.000348713768350076,Significant difference ✅
