@@ -8,12 +8,12 @@
 76,Sudden,Problem,BACC,0.47809552798848143,normal,Paired t-test,5.404091347961801,7.410006456528094e-07,Significant difference ✅
 76,Sudden,Problem,Recall,0.01466400267605378,not normal,Wilcoxon signed-rank test,0.0,7.711235103541698e-14,Significant difference ✅
 76,Sudden,Problem,Precision,3.3663065028574355e-05,not normal,Wilcoxon signed-rank test,158.0,1.4141843682611328e-11,Significant difference ✅
-13,Gradual,Domain,BACC,0.1350112571389087,normal,Paired t-test,3.9328826665383243,0.0019882951160091872,Significant difference ✅
-13,Gradual,Domain,Recall,0.061200292355221425,normal,Paired t-test,7.39431904368621,8.338283444425044e-06,Significant difference ✅
-13,Gradual,Domain,Precision,0.7476964111944,normal,Paired t-test,-4.928601870463812,0.000348713768350076,Significant difference ✅
+13,Gradual,Domain,BACC,0.523062817997584,normal,Paired t-test,3.3371540473386734,0.005919195617146467,Significant difference ✅
+13,Gradual,Domain,Recall,0.07727349397943563,normal,Paired t-test,6.909456437371836,1.629127874169878e-05,Significant difference ✅
+13,Gradual,Domain,Precision,0.8654489422218066,normal,Paired t-test,-4.7253083954181925,0.0004924803905194052,Significant difference ✅
 13,Re-occurring,Domain,BACC,0.1350112571389087,normal,Paired t-test,3.9328826665383243,0.0019882951160091872,Significant difference ✅
 13,Re-occurring,Domain,Recall,0.061200292355221425,normal,Paired t-test,7.39431904368621,8.338283444425044e-06,Significant difference ✅
 13,Re-occurring,Domain,Precision,0.7476964111944,normal,Paired t-test,-4.928601870463812,0.000348713768350076,Significant difference ✅
-13,Gradual,Problem,BACC,0.1350112571389087,normal,Paired t-test,3.9328826665383243,0.0019882951160091872,Significant difference ✅
-13,Gradual,Problem,Recall,0.061200292355221425,normal,Paired t-test,7.39431904368621,8.338283444425044e-06,Significant difference ✅
-13,Gradual,Problem,Precision,0.7476964111944,normal,Paired t-test,-4.928601870463812,0.000348713768350076,Significant difference ✅
+13,Sudden,Domain,BACC,0.15598022159429692,normal,Paired t-test,3.789605798027637,0.0025781051699571124,Significant difference ✅
+13,Sudden,Domain,Recall,0.10606150507856849,normal,Paired t-test,7.2740572985700265,9.81820204771028e-06,Significant difference ✅
+13,Sudden,Domain,Precision,0.8468334992664088,normal,Paired t-test,-4.789140002714193,0.0004416266884209027,Significant difference ✅
